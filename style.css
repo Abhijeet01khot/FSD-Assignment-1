@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", monospace;
+  background: #dfe7f5;
+}
+
+/* Main Screen */
+
+.game-screen {
+  min-height: 100vh;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(135deg, #dfe7f5, #f7dff0);
+
+  color: #3b365c;
+}
+
+/* Title */
+
+h1 {
+  color: #6c5ce7;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  text-shadow:
+    3px 3px #ffffff;
+}
+
+/* Calculator */
+
+.calculator-card {
+  width: 100%;
+  max-width: 450px;
+
+  background: #ffffff;
+
+  border: 5px solid #6c5ce7;
+
+  box-shadow:
+    8px 8px #f3b7d6;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+/* Header */
+
+.card-header {
+  padding: 18px;
+
+  background: #ff8fb3;
+
+  border-bottom: 5px solid #6c5ce7;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  text-align: center;
+
+  text-shadow: 2px 2px #9b4265;
+}
+
+/* Calculator Content */
+
+.calculator-content {
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  background: #f9f7ff;
+}
+
+/* Inputs */
+
+input,
+select {
+  width: 100%;
+
+  padding: 16px;
+
+  background: #ffffff;
+
+  color: #3b365c;
+
+  border: 4px solid #9b8ff2;
+
+  border-radius: 5px;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 10px;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa5c4;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff8fb3;
+
+  box-shadow:
+    3px 3px #f3b7d6;
+}
+
+/* Calculate Button */
+
+button {
+  padding: 18px;
+
+  background: #ffd95a;
+
+  color: #3b365c;
+
+  border: 4px solid #6c5ce7;
+
+  border-radius: 5px;
+
+  box-shadow:
+    5px 5px #9b8ff2;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+
+button:hover {
+  background: #9ff0c4;
+}
+
+button:active {
+  transform: translate(4px, 4px);
+
+  box-shadow:
+    1px 1px #9b8ff2;
+}
+
+/* Result */
+
+.result-box {
+  margin-top: 8px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  background: #e9e5ff;
+
+  border: 4px solid #9b8ff2;
+
+  border-radius: 5px;
+}
+
+.result-box span {
+  display: block;
+
+  color: #6c5ce7;
+
+  font-size: 10px;
+
+  margin-bottom: 15px;
+}
+
+.result-box strong {
+  color: #42b883;
+
+  font-size: 15px;
+
+  word-break: break-word;
+}
+
+/* Footer */
+
+.card-footer {
+  padding: 14px;
+
+  background: #eeeaff;
+
+  border-top: 5px solid #6c5ce7;
+
+  text-align: center;
+
+  font-size: 8px;
+
+  color: #77728f;
+}
+
+/* Bottom Text */
+
+.footer-text {
+  margin-top: 30px;
+
+  color: #6c5ce7;
+
+  font-size: 9px;
+
+  text-align: center;
+}

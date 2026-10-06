@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-screen">
+    <h1>◆ CALCULATOR QUEST ◆</h1>
+
+    <div class="calculator-card">
+      <div class="card-header">
+        JAVASCRIPT CALCULATOR
+      </div>
+
+      <div class="calculator-content">
+
+        <input
+          type="number"
+          id="num1"
+          placeholder="Enter first number"
+        >
+
+        <select id="operator">
+          <option value="+">＋ ADDITION</option>
+          <option value="-">− SUBTRACTION</option>
+          <option value="*">× MULTIPLICATION</option>
+          <option value="/">÷ DIVISION</option>
+        </select>
+
+        <input
+          type="number"
+          id="num2"
+          placeholder="Enter second number"
+        >
+
+        <button onclick="calculate()">
+          🎮 CALCULATE
+        </button>
+
+        <div class="result-box">
+          <span>RESULT</span>
+          <strong id="result">READY...</strong>
+        </div>
+
+      </div>
+
+      <div class="card-footer">
+        POWERED BY JAVASCRIPT FUNCTIONS
+      </div>
+    </div>
+
+    <p class="footer-text">
+      CHOOSE AN OPERATION AND CALCULATE YOUR RESULT
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
